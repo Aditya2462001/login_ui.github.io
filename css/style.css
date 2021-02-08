@@ -1,0 +1,416 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url('../images/img2.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-position: center; */
+    background-attachment: fixed;
+    /* filter: blur(2px); */
+}
+.main_container
+{
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(210, 247, 247, 0.452);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0px 0px 20px rgba(71, 71, 71, 0.582);
+
+}
+form
+{
+    width: 60%;
+}
+/* left container */
+.main_container .container-left
+{
+    width: 50%;
+    height: 100%;
+    /* background: linear-gradient(to right,#79b4b6 ,#1af3cf); */
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4rem;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.6);
+
+}
+.main_container .container-left .login_option
+{
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+}
+.main_container .container-left .login_option
+{
+    width: 100%;
+    margin: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+.main_container .container-left .login_option h2
+{
+    position: relative;
+    text-align: center;
+    
+}
+.main_container .container-left .login_option .options
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 8rem;
+    
+}
+.container-left .login_option .options .icons
+{
+    list-style:none;
+    padding: 20px 0px;
+}
+.container-left .login_option .options .icons a
+{
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    position: relative;
+    transition: all 0.6s;
+    display: flex;
+    border-radius: 20px;
+    border:1.5px solid gray;
+    background: rgba(255,255,255,0.4);
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+    
+    
+}
+.container-left .login_option .options .icons a p
+{
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 5px;
+    color: black;
+    font-weight: 500;
+    
+}
+
+ .options .icons a #fab
+{
+    margin-right:5px;
+    /* background: white; */
+    margin-top: 2px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 20px;
+    
+}
+.options .icons .fa-facebook-f
+ {
+     color: #3b5998;
+
+ }
+.options .icons .fa-google-plus-g
+ {
+     color: #db4a39;
+
+ }
+.options .icons .fa-github
+ {
+     color:black;
+
+ }
+ .options .icons a:hover
+ {
+     transform: scale(1.07);
+ }
+ .options .icons a::before
+ {
+     content:"";
+     position: absolute;
+     height: 30px;
+     top: -1px;
+     left: -2px;
+     width: 30px;
+     border-radius: 20px;
+     border: 2px solid rgb(27, 197, 36);
+     background-color: white;
+     z-index: -1;
+     transition: all 0.5s;
+     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+
+ }
+  .options .icons a:hover::before
+  {
+      width: 100%;
+      box-shadow: 0px 0px 20px rgb(27, 197, 36);
+
+  }
+.options #google_png
+{
+    width: 30px;
+    height: 30px;
+    margin-top: 1px;
+    margin-right: 12px;
+    /* background:white; */
+    border-radius: 20px;
+}
+.register_cont
+{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top:10px ;
+    width: 100%;
+
+}
+.register_cont h3
+{
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.register_cont button
+{
+    margin: 20px 0px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 70%;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    background: linear-gradient(to right,rgb(21, 216, 216),rgba(255, 255, 255, 0.822),skyblue);
+    outline: none;
+    transition: all 0.5s ;
+    box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.822);
+}
+.register_cont button:hover
+{
+    transform: scale(1.07);
+    box-shadow: 0px 0px 20px rgb(21, 216, 216);
+
+}
+
+/* end left container */
+.main_container .container-left img
+{
+    width: 300px;
+    height: 300px;
+}
+.main_container .container-right
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+
+}
+.main_container .heading
+{
+    margin: 20px;
+    margin-top: 8rem;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+.heading::before
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: black;
+
+}
+.main_container .username_cont
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px;
+    margin-top: 20px;
+}
+.main_container .username_cont .Username
+{
+    border: none;
+    border-bottom:2px solid black ;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgba(225, 255, 255, 0.658);
+    outline: none;
+    padding: 0px 10px;box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+
+}
+.main_container .password_cont
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px;
+    margin-top: 20px;
+}
+.main_container .password_cont .pass_cont
+{
+    width: 100%;
+    display: flex;
+
+}
+.main_container .password_cont .pass_cont #see_pass 
+{
+    margin-left: -25px;
+    margin-top: 3px;
+    color: gray;
+    cursor: pointer;
+    transition: all 0.7s;
+
+}
+.main_container .password_cont .pass_cont #see_pass:hover
+{
+    transform: scale(1.06);
+
+}
+
+.main_container .password_cont .password
+{
+    width: 100%;
+    border: none;
+    border-bottom:2px solid black ;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgba(225, 255, 255, 0.658);
+    outline: none;
+    padding: 0px 10px;
+    padding-right: 30px;
+    padding: 0px 10px;box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+    
+}
+.main_container .submit_cont
+{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    margin-top:20px ;
+
+}
+.main_container .submit_cont .checkme_cont
+{
+    display: flex;
+    margin-bottom:20px;
+
+}
+.main_container .submit_cont .checkme_cont .checkbox
+{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+}
+.main_container .submit_cont .checkme_cont p
+{
+    margin:0px 10px;
+    margin-left:2px;
+    margin-top: -1px;
+    font-size: 15px;
+
+}
+.main_container .submit_cont .submitbtn
+{
+    height: 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    transition: all 0.8s;
+    background: linear-gradient(to right ,#dd5e89,#f7bb97);
+    box-shadow: 0px 0px 5px #f7bb97;
+
+}
+.main_container .submit_cont .submitbtn:hover
+{
+    background: linear-gradient(to left,#dd5e89,#f7bb97);
+    box-shadow: 0px 0px 20px #dd5e89;
+    color: white;
+    transform: scale(1.07);
+}
+.main_container .submit_cont a
+{
+    font-size: 13px;
+    margin: 5px;
+    transition: all 0.8s;
+}
+.main_container .submit_cont a:hover
+{
+    color: white;
+    transform: scale(1.03);
+}
+.other_option
+{
+    width: 100%;
+    margin: 10px;
+    margin-top: 2rem;
+    text-align: center;
+    display: none;
+}
+.other_option ul
+{
+    display: flex;
+    margin: 1rem;
+    justify-content: space-evenly;
+
+}
+.other_option ul li
+{
+    display: flex;
+    font-size: 25px;
+    list-style: none;
+}
+.other_option ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.other_option ul li a .fa-facebook-square
+{
+    color: rgb(31, 31, 165);
+}
+.other_option ul li a .fa-google-plus
+{
+    color:rgb(114, 25, 25);
+}
+.other_option ul li a .fa-google
+{
+    color:rgb(174, 219, 50);
+}
+.other_option ul li a .fa-github-square
+{
+    color:black;
+}
+
